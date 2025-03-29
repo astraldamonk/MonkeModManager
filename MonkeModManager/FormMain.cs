@@ -776,7 +776,6 @@ namespace MonkeModManager
                 {
                     File.Move(Path.Combine(InstallDirectory, "mods.disable"), Path.Combine(InstallDirectory, "winhttp.dll"));
                     buttonToggleMods.Text = "Disable Mods";
-                    buttonToggleMods.BackColor = Color.FromArgb(120, 0, 0);
                     modsDisabled = false;
                     UpdateStatus("Enabled mods!");
                 }
@@ -787,7 +786,6 @@ namespace MonkeModManager
                 {
                     File.Move(Path.Combine(InstallDirectory, "winhttp.dll"), Path.Combine(InstallDirectory, "mods.disable"));
                     buttonToggleMods.Text = "Enable Mods";
-                    buttonToggleMods.BackColor = Color.FromArgb(0, 120, 0);
                     modsDisabled = true;
                     UpdateStatus("Disabled mods!");
                 }

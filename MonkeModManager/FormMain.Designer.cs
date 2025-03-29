@@ -49,6 +49,8 @@
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.minimizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.mmm = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.contextMenuStripMain.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -91,6 +93,7 @@
             this.label1.Size = new System.Drawing.Size(118, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Gorilla Tag Folder Path:";
+            this.label1.Visible = false;
             // 
             // buttonInstall
             // 
@@ -101,7 +104,7 @@
             this.buttonInstall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInstall.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonInstall.ForeColor = System.Drawing.Color.White;
-            this.buttonInstall.Location = new System.Drawing.Point(551, 69);
+            this.buttonInstall.Location = new System.Drawing.Point(551, 204);
             this.buttonInstall.Name = "buttonInstall";
             this.buttonInstall.Size = new System.Drawing.Size(112, 54);
             this.buttonInstall.TabIndex = 4;
@@ -116,7 +119,7 @@
             this.labelStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStatus.ForeColor = System.Drawing.Color.White;
             this.labelStatus.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.labelStatus.Location = new System.Drawing.Point(9, 9);
+            this.labelStatus.Location = new System.Drawing.Point(112, 9);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(61, 13);
             this.labelStatus.TabIndex = 5;
@@ -156,7 +159,7 @@
             this.buttonUninstallAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUninstallAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUninstallAll.ForeColor = System.Drawing.Color.White;
-            this.buttonUninstallAll.Location = new System.Drawing.Point(551, 129);
+            this.buttonUninstallAll.Location = new System.Drawing.Point(551, 317);
             this.buttonUninstallAll.Name = "buttonUninstallAll";
             this.buttonUninstallAll.Size = new System.Drawing.Size(112, 54);
             this.buttonUninstallAll.TabIndex = 0;
@@ -167,13 +170,13 @@
             // buttonToggleMods
             // 
             this.buttonToggleMods.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.buttonToggleMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonToggleMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.buttonToggleMods.Enabled = false;
             this.buttonToggleMods.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.buttonToggleMods.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonToggleMods.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonToggleMods.ForeColor = System.Drawing.Color.White;
-            this.buttonToggleMods.Location = new System.Drawing.Point(551, 9);
+            this.buttonToggleMods.Location = new System.Drawing.Point(551, 91);
             this.buttonToggleMods.Name = "buttonToggleMods";
             this.buttonToggleMods.Size = new System.Drawing.Size(112, 54);
             this.buttonToggleMods.TabIndex = 10;
@@ -308,6 +311,29 @@
             this.panel1.Size = new System.Drawing.Size(2, 360);
             this.panel1.TabIndex = 11;
             // 
+            // mmm
+            // 
+            this.mmm.AutoSize = true;
+            this.mmm.BackColor = System.Drawing.Color.Transparent;
+            this.mmm.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mmm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.mmm.Location = new System.Drawing.Point(12, 1);
+            this.mmm.Name = "mmm";
+            this.mmm.Size = new System.Drawing.Size(83, 30);
+            this.mmm.TabIndex = 12;
+            this.mmm.Text = "mmm™";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(96, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(10, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "-";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -315,6 +341,8 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(671, 383);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.mmm);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.listViewMods);
             this.Controls.Add(this.buttonOpenConfig);
@@ -364,6 +392,8 @@
         private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem minimizeToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label mmm;
+        private System.Windows.Forms.Label label2;
     }
 }
 
