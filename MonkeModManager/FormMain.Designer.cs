@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.textBoxDirectory = new System.Windows.Forms.TextBox();
             this.buttonFolderBrowser = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.buttonInstall = new System.Windows.Forms.Button();
             this.labelStatus = new System.Windows.Forms.Label();
             this.contextMenuStripMain = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -50,7 +49,8 @@
             this.minimizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.mmm = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.contextMenuStripMain.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -83,18 +83,6 @@
             this.buttonFolderBrowser.UseVisualStyleBackColor = false;
             this.buttonFolderBrowser.Click += new System.EventHandler(this.buttonFolderBrowser_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(207, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Gorilla Tag Folder Path:";
-            this.label1.Visible = false;
-            // 
             // buttonInstall
             // 
             this.buttonInstall.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -104,7 +92,7 @@
             this.buttonInstall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInstall.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonInstall.ForeColor = System.Drawing.Color.White;
-            this.buttonInstall.Location = new System.Drawing.Point(551, 204);
+            this.buttonInstall.Location = new System.Drawing.Point(551, 108);
             this.buttonInstall.Name = "buttonInstall";
             this.buttonInstall.Size = new System.Drawing.Size(112, 54);
             this.buttonInstall.TabIndex = 4;
@@ -119,7 +107,7 @@
             this.labelStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStatus.ForeColor = System.Drawing.Color.White;
             this.labelStatus.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.labelStatus.Location = new System.Drawing.Point(112, 9);
+            this.labelStatus.Location = new System.Drawing.Point(9, 361);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(61, 13);
             this.labelStatus.TabIndex = 5;
@@ -159,7 +147,7 @@
             this.buttonUninstallAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUninstallAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUninstallAll.ForeColor = System.Drawing.Color.White;
-            this.buttonUninstallAll.Location = new System.Drawing.Point(551, 317);
+            this.buttonUninstallAll.Location = new System.Drawing.Point(551, 212);
             this.buttonUninstallAll.Name = "buttonUninstallAll";
             this.buttonUninstallAll.Size = new System.Drawing.Size(112, 54);
             this.buttonUninstallAll.TabIndex = 0;
@@ -176,7 +164,7 @@
             this.buttonToggleMods.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonToggleMods.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonToggleMods.ForeColor = System.Drawing.Color.White;
-            this.buttonToggleMods.Location = new System.Drawing.Point(551, 91);
+            this.buttonToggleMods.Location = new System.Drawing.Point(551, 9);
             this.buttonToggleMods.Name = "buttonToggleMods";
             this.buttonToggleMods.Size = new System.Drawing.Size(112, 54);
             this.buttonToggleMods.TabIndex = 10;
@@ -191,7 +179,7 @@
             this.buttonOpenGameFolder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOpenGameFolder.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOpenGameFolder.ForeColor = System.Drawing.Color.White;
-            this.buttonOpenGameFolder.Location = new System.Drawing.Point(407, 60);
+            this.buttonOpenGameFolder.Location = new System.Drawing.Point(292, 60);
             this.buttonOpenGameFolder.Name = "buttonOpenGameFolder";
             this.buttonOpenGameFolder.Size = new System.Drawing.Size(134, 23);
             this.buttonOpenGameFolder.TabIndex = 5;
@@ -221,7 +209,7 @@
             this.buttonMods.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMods.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMods.ForeColor = System.Drawing.Color.White;
-            this.buttonMods.Location = new System.Drawing.Point(210, 60);
+            this.buttonMods.Location = new System.Drawing.Point(152, 60);
             this.buttonMods.Name = "buttonMods";
             this.buttonMods.Size = new System.Drawing.Size(134, 23);
             this.buttonMods.TabIndex = 5;
@@ -247,7 +235,7 @@
             this.listViewMods.Location = new System.Drawing.Point(12, 91);
             this.listViewMods.Name = "listViewMods";
             this.listViewMods.ShowItemToolTips = true;
-            this.listViewMods.Size = new System.Drawing.Size(529, 280);
+            this.listViewMods.Size = new System.Drawing.Size(529, 264);
             this.listViewMods.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listViewMods.TabIndex = 0;
             this.listViewMods.UseCompatibleStateImageBehavior = false;
@@ -317,22 +305,39 @@
             this.mmm.BackColor = System.Drawing.Color.Transparent;
             this.mmm.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mmm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.mmm.Location = new System.Drawing.Point(12, 1);
+            this.mmm.Location = new System.Drawing.Point(7, 1);
             this.mmm.Name = "mmm";
-            this.mmm.Size = new System.Drawing.Size(83, 30);
+            this.mmm.Size = new System.Drawing.Size(215, 30);
             this.mmm.TabIndex = 12;
-            this.mmm.Text = "mmm™";
+            this.mmm.Text = "Monke Mod Manager";
             // 
-            // label2
+            // button1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(96, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(10, 13);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "-";
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(551, 317);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 54);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Join Our Discord";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(217, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 20);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "- astral";
             // 
             // FormMain
             // 
@@ -341,7 +346,8 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(671, 383);
             this.ContextMenuStrip = this.contextMenuStrip1;
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.mmm);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.listViewMods);
@@ -352,7 +358,6 @@
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.buttonUninstallAll);
             this.Controls.Add(this.buttonInstall);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonFolderBrowser);
             this.Controls.Add(this.textBoxDirectory);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -375,7 +380,6 @@
 
         private System.Windows.Forms.TextBox textBoxDirectory;
         private System.Windows.Forms.Button buttonFolderBrowser;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonInstall;
         private System.Windows.Forms.Label labelStatus;
         private System.Windows.Forms.ContextMenuStrip contextMenuStripMain;
@@ -393,7 +397,8 @@
         private System.Windows.Forms.ToolStripMenuItem minimizeToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label mmm;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -14,6 +14,7 @@ using MonkeModManager.Internals.SimpleJSON;
 using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Runtime.Remoting.Lifetime;
 
 namespace MonkeModManager
 {
@@ -795,6 +796,11 @@ namespace MonkeModManager
         private void listViewMods_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://discord.gg/vrmods");
         }
     }
 
