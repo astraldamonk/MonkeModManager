@@ -21,7 +21,7 @@ namespace MonkeModManager
     {
 
         private const string BaseEndpoint = "https://api.github.com/repos/";
-        private const Int16 CurrentVersion = 5;
+        private const Int16 CurrentVersion = 1;
         private List<ReleaseInfo> releases;
         Dictionary<string, int> groups = new Dictionary<string, int>();
         private string InstallDirectory = @"";
@@ -612,7 +612,7 @@ namespace MonkeModManager
         private void CheckVersion()
         {
             UpdateStatus("Checking for updates...");
-            Int16 version = Convert.ToInt16(DownloadSite("https://raw.githubusercontent.com/BzzzThe18th/MonkeModManager/master/update.txt"));
+            Int16 version = Convert.ToInt16(DownloadSite("https://raw.githubusercontent.com/astraldamonk/MonkeModManager/refs/heads/master/update.txt"));
             if (version > CurrentVersion)
             {
                 this.Invoke((MethodInvoker)(() =>
